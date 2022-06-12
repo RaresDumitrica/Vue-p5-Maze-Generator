@@ -92,19 +92,6 @@ export default {
           let right = grid[getIndex(i + 1, j)];
           let bottom = grid[getIndex(i, j + 1)];
           let left = grid[getIndex(i - 1, j)];
-
-          // if(top && !top.visited) {
-          //     neighbours.push(top);
-          // }
-          // if(right && !right.visited) {
-          //     neighbours.push(right);
-          // }
-          // if(bottom && !bottom.visited) {
-          //     neighbours.push(bottom);
-          // }
-          // if(left && !left.visited) {
-          //     neighbours.push(left);
-          // }
           [top, right, bottom, left].forEach((element) => {
             if (element && !element.visited) {
               neighbours.push(element);
